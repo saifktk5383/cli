@@ -1,5 +1,16 @@
 # Changelog
 
+## [9.8.0](https://github.com/npm/cli/compare/arborist-v9.7.0...arborist-v9.8.0) (2026-06-04)
+### Features
+* [`8ff3e48`](https://github.com/npm/cli/commit/8ff3e48113a53576a8d450d7d5a1cb190a1986e1) [#9483](https://github.com/npm/cli/pull/9483) allowScripts tooling and inBundle hardening (#9483) (@github-actions[bot], @JamieMagee)
+### Bug Fixes
+* [`95cf2e9`](https://github.com/npm/cli/commit/95cf2e9efea892023387f3aec6062b8a7e8f1a60) [#9489](https://github.com/npm/cli/pull/9489) validate registry path for allow-remote tarballs (@Abhinav-143x)
+* [`869cb9a`](https://github.com/npm/cli/commit/869cb9a1ef5627872830935024be94d60102b514) [#9485](https://github.com/npm/cli/pull/9485) arborist: link meta-only optional peers in linked strategy (@manzoorwanijk)
+* [`d41a9e3`](https://github.com/npm/cli/commit/d41a9e3494135593c2bbd0010e0b21b5adc6ee90) [#9484](https://github.com/npm/cli/pull/9484) arborist: clean up orphaned scoped store entries in linked strategy (@manzoorwanijk)
+* [`39d034d`](https://github.com/npm/cli/commit/39d034d7bee3f523ebfac8215e924d466722d101) [#9455](https://github.com/npm/cli/pull/9455) sanitize package name in linked-strategy path construction (@owlstronaut)
+* [`d59c964`](https://github.com/npm/cli/commit/d59c96413f6c731b3df87556efe4f0a9706d0a6d) [#9451](https://github.com/npm/cli/pull/9451) reject path traversal entries when inflating dependency shrinkwraps (@owlstronaut)
+* [`c9045d5`](https://github.com/npm/cli/commit/c9045d5885fa1338b7d32fa845aea0bfeab01657) [#9429](https://github.com/npm/cli/pull/9429) arborist: read install scripts from disk on lockfile installs instead of a sentinel (@JamieMagee)
+
 ## [9.7.0](https://github.com/npm/cli/compare/arborist-v9.6.0...arborist-v9.7.0) (2026-05-27)
 ### Features
 * [`a10c7ca`](https://github.com/npm/cli/commit/a10c7caf3ad9d2d5e17234c5c5e615dbce7717f9) [#9415](https://github.com/npm/cli/pull/9415) Phase 1 of `allowScripts` opt-in install-script policy (#9360) (#9415) (@owlstronaut, @JamieMagee)

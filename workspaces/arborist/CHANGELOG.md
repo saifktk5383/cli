@@ -1,5 +1,20 @@
 # Changelog
 
+## [10.0.0-pre.1](https://github.com/npm/cli/compare/arborist-v10.0.0-pre.0...arborist-v10.0.0-pre.1) (2026-06-04)
+### Features
+* [`5cd5150`](https://github.com/npm/cli/commit/5cd5150d3e85dcf5d246e7e5c9de216c2ff849db) [#9424](https://github.com/npm/cli/pull/9424) default-deny install scripts (allowScripts opt-in) [v12] (@JamieMagee)
+* [`64e3f79`](https://github.com/npm/cli/commit/64e3f798344e66f4c500636cb8aec5c8111a1fe9) [#9480](https://github.com/npm/cli/pull/9480) allowScripts tooling and inBundle hardening (#9480) (@JamieMagee)
+* [`7068d42`](https://github.com/npm/cli/commit/7068d4286eb446fdb0ded08d15d7b5c3883d80f5) [#9360](https://github.com/npm/cli/pull/9360) Phase 1 of `allowScripts` opt-in install-script policy (#9360) (@JamieMagee)
+### Bug Fixes
+* [`bf623e0`](https://github.com/npm/cli/commit/bf623e0a9ea568a47b777c563e48a097cb12e442) [#9473](https://github.com/npm/cli/pull/9473) validate registry path for allow-remote tarballs (@Abhinav-143x)
+* [`a105799`](https://github.com/npm/cli/commit/a10579959a5ed83d459f4c6d2f039ef5b62b4ff1) [#9461](https://github.com/npm/cli/pull/9461) arborist: link meta-only optional peers in linked strategy (@manzoorwanijk)
+* [`275bc69`](https://github.com/npm/cli/commit/275bc6934cc2d7c645e2c18dc2c12dc75d148e61) [#9441](https://github.com/npm/cli/pull/9441) arborist: clean up orphaned scoped store entries in linked strategy (@manzoorwanijk)
+* [`9f3c97f`](https://github.com/npm/cli/commit/9f3c97f83443ee00b9ca6beaf3e8cec95d3199ad) [#9452](https://github.com/npm/cli/pull/9452) sanitize package name in linked-strategy path construction (@owlstronaut)
+* [`a81f2f8`](https://github.com/npm/cli/commit/a81f2f8f4e89c202e57c32b60ee9d27020b49be0) [#9428](https://github.com/npm/cli/pull/9428) arborist: read install scripts from disk on lockfile installs instead of a sentinel (@JamieMagee)
+* [`c5292fa`](https://github.com/npm/cli/commit/c5292fa8a09a56b25394d393faf21e47ffb096c0) [#9422](https://github.com/npm/cli/pull/9422) use prerelease strategy without a bug (@owlstronaut)
+* [`dac7ff6`](https://github.com/npm/cli/commit/dac7ff6d3d62422bb8dad136fcb8f48e99a4594a) [#9399](https://github.com/npm/cli/pull/9399) arborist: drop self-link materialization for undeclared workspaces (#9399) (@manzoorwanijk)
+* [`b77850e`](https://github.com/npm/cli/commit/b77850e550a15c6205fdafc9e3843323b7135923) [#9395](https://github.com/npm/cli/pull/9395) skip hidden lockfile save on dry run (#9395) (@puneetdixit200, @puneetdixit200)
+
 ## [10.0.0-pre.0.0](https://github.com/npm/cli/compare/arborist-v9.4.2...arborist-v10.0.0-pre.0.0) (2026-05-20)
 ### ⚠️ BREAKING CHANGES
 * `npm shrinkwrap` is removed, the `shrinkwrap` config alias is removed, and `npm-shrinkwrap.json` is no longer loaded or honored at the project root or from inside dependency tarballs. Rename project-root `npm-shrinkwrap.json` to `package-lock.json`; use `bundleDependencies` if you need to ship a locked dependency tree.

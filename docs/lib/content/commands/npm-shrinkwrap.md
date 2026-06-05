@@ -1,3 +1,6 @@
+npm install [<package-spec> ...]
+
+aliases: add, i, in, ins, inst, insta, instal, isnt, isnta, isntal, isntall
 ---
 title: npm-shrinkwrap
 section: 1
